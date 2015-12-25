@@ -1,3 +1,5 @@
+include homebrew
+
 class z {
   package { 'z':
     ensure => present
