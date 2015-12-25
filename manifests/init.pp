@@ -5,7 +5,7 @@ class z {
 
   $home = "/Users/${::boxen_user}"
 
-  file_line { "Add gnubin to all environment man paths":
+  file_line { "Source z":
     path => "${home}/.zshrc",
     line => 'source `brew --prefix`/etc/profile.d/z.sh'
   }
