@@ -9,4 +9,8 @@ class z {
     path => "${home}/.zshrc",
     line => 'source `brew --prefix`/etc/profile.d/z.sh'
   }
+
+  file { "${home}/.z":
+    ensure => present
+  }
 }
